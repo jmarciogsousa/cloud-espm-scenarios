@@ -9,17 +9,13 @@ sap.app.config = {
 	// default value of used backend type for getting business data.
 	usedBackendType : sap.app.localStorage.PREF_USED_BACKEND_TYPE_ABAP,
 
-	// If 'true' OData service connected to ABAP Backend is used. Otherwise HANA Cloud is used.
-	useAbapBackend : true,
-
 	// If 'true' data source information is displayed in 'Select a Product' area (Abap or HANA Cloud) and
 	// 'Customer reviews of selected product' area
 	displayDataSourceInfo : true,
 
-	// backend details used in settings and for odata service Url links. Keep this data in sync with destinations
-	// see destinations/cloudextensionbackend
-	cloudExtensionOdataServiceUrl : "https://webreviewsespmhana.hana.ondemand.com/espm-ui-reviews-web/espm.svc",
+	cloudExtensionOdataServiceName : "espm.svc",
 
+	// backend details used in settings and for odata service Url links. Keep this data in sync with destinations
 	// see destinations/cloudbackend
 	cloudOdataServiceUrl : "https://cloudmodelespmhana.hana.ondemand.com/espm-cloud-web/espm.svc",
 
