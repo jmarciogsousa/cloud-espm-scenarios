@@ -13,7 +13,7 @@ Table of Contents
 2.2.1   How to run ESPM retailer applications on local server
 2.2.2   How to run ESPM retailer applications on HANA Cloud
 2.2.3   Integration tests
-2.3   Webreviews application
+2.3   Webreviews application(Final Version)
 2.3.1   How to run ESPM webreviews applications on local server
 2.3.2   How to run ESPM webreviews applications on HANA Cloud
 2.3.3   Integration tests
