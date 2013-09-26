@@ -1,8 +1,4 @@
-sap.ui.controller("espm-ui-reviews-web.test-tab-2", {
-
-	onInit : function() {
-		this.loadCategories();
-	},
+sap.ui.controller("espm-ui-reviews-web.categories-selection", {
 
 	loadCategories : function() {
 		var fnSuccess = $.proxy(this.createAndBindCategorySelectionModel, this);
@@ -39,7 +35,10 @@ sap.ui.controller("espm-ui-reviews-web.test-tab-2", {
 
 	selectedCategoryChanged : function(sSelectedCategoryId) {
 		this.getView().setSelectedCategoryInDropDownBox(sSelectedCategoryId);
-		// sap.ui.commons.MessageBox.alert(sap.app.i18n.getProperty("SELECTED_CATEGORY_CHANGED_MSG"));
+		var oEventBus = sap.ui.getCore().getEventBus();
+		oEventBus.publish("sap.app", "selectedCategoryChanged", {
+			selectedCategoryId : sSelectedCategoryId
+		});
 	}
 
 });

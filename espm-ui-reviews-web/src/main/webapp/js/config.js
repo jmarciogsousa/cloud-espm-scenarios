@@ -35,4 +35,7 @@ sap.app.config = {
 	cloudImagesBaseUrl : "/espm-model-web/images/",
 
 	productPlaceholderImg : "images/placeholder.product.150x150.png",
+
+	displayProductSelectionPanel : true,
+	displayShell : true,
 };
